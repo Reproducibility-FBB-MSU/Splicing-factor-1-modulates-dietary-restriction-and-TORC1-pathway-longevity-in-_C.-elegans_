@@ -217,3 +217,9 @@ class py_DESeq2:
 # http://feb2014.archive.ensembl.org/Caenorhabditis_elegans/Location/Genome?ftype=DnaAlignFeature;id=MM454_FPK17YK01D0V75
 
 # On the next step, we found out that the algorithm SAJR (for which we created files) works incorrectly. We initialized it a few times using different ways and, at least, the initialization was completed but the algorithm didn't work. I think the problem is in wrong file-pathways, as when I copied all files in parent dir the algorithm tried to work but gave wrong results
+
+
+
+
+
+
