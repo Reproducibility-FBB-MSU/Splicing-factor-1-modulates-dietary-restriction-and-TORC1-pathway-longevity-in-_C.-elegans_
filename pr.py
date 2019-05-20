@@ -1,7 +1,10 @@
-# title: 'Re-analysis of the publication: Splicing factor 1 modulates dietary restriction and TORC1 pathway longevity in _C. elegans_'
+﻿# title: 'Re-analysis of the publication: Splicing factor 1 modulates dietary restriction and TORC1 pathway longevity in _C. elegans_'
 # author: Maria Grigorjeva, Yulia Petrova
 # date: May 21, 2019
 
+# Abstract
+
+# Introduction
 
 # Downliading in-files
 # for downloading fastq-files follow the link https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-4866/
@@ -101,6 +104,7 @@ pip install --user --upgrade cutadapt
 
 # STAR version 2.5.0c
 # Genome alignment was performed using STAR 2.5.0c.  Additional parameters used for alignment are: _–alignIntronMax 50000_ (WBcel235)
+
 STAR —runThreadN 2 —genomeDir allna.fa --readFilesIn ~/Desktop/inf/term4python/pr/outs/ERR1474664_1.fastq, ~/Desktop/inf/term4python/pr/outs/ERR1474664_2.fastq --outFileNamePrefix ~/Desktop/inf/term4python/pr/mapped/ERR1474664
 STAR —runThreadN 2 —genomeDir allna.fa --readFilesIn ~/Desktop/inf/term4python/pr/outs/ERR1474665_1.fastq, ~/Desktop/inf/term4python/pr/outs/ERR1474665_2.fastq --outFileNamePrefix ~/Desktop/inf/term4python/pr/mapped/ERR1474665
 STAR —runThreadN 2 —genomeDir allna.fa --readFilesIn ~/Desktop/inf/term4python/pr/outs/ERR1474666_1.fastq, ~/Desktop/inf/term4python/pr/outs/ERR1474666_2.fastq --outFileNamePrefix ~/Desktop/inf/term4python/pr/mapped/ERR1474666
@@ -139,8 +143,6 @@ STAR —runThreadN 2 —genomeDir allna.fa --readFilesIn ~/Desktop/inf/term4pyth
 STAR —runThreadN 2 —genomeDir allna.fa --readFilesIn ~/Desktop/inf/term4python/pr/outs/ERR1474705_1.fastq, ~/Desktop/inf/term4python/pr/outs/ERR1474705_2.fastq --outFileNamePrefix ~/Desktop/inf/term4python/pr/mapped/ERR1474705
 
 # htseq-count
-
-<python script>
 
 # DESeq2
 
@@ -214,7 +216,4 @@ class py_DESeq2:
 
 # http://feb2014.archive.ensembl.org/Caenorhabditis_elegans/Location/Genome?ftype=DnaAlignFeature;id=MM454_FPK17YK01D0V75
 
-# SAJR (http://storage.bioinf.fbb.msu.ru/~mazin/downloads.html)
 # On the next step, we found out that the algorithm SAJR (for which we created files) works incorrectly. We initialized it a few times using different ways and, at least, the initialization was completed but the algorithm didn't work. I think the problem is in wrong file-pathways, as when I copied all files in parent dir the algorithm tried to work but gave wrong results
-
-
